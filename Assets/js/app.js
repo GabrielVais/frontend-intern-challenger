@@ -2,10 +2,10 @@ var url_atual = window.location.href;
 
 const url = url_atual + "Assets/urls.json";
 
-// window.onload = function(){
+window.onload = function(){
 
-// 	getJson();
-// }
+	getJson();
+}
 
 
 async function getJson(){
@@ -27,18 +27,37 @@ async function getJson(){
       
      console.log(dados);
 
-     const lista = document.querySelector("list-urls");
+     const lista = document.querySelector(".list-urls");
 
-     dados.forEach(dado =>{
+     const numberHits = document.querySelector("#number-hit");
 
+     //pegando 5 items com array slice (-5)
 
-     // lista.innerHTML += ``
+     dados.slice(-5).forEach(dado =>{
 
-     console.log(dado)
-
-
-   		
+     lista.innerHTML += `
+     			<li>
+					<span class="url">${dado.shortUrl}</span>
+					<span class="count-url">${dado.hits}</span>
+				</li>
+				<hr class="row-url"/>`;
+    
    		});
+
+   	 
+
+   	  var total = dados.reduce( function(tot, record) {
+    	
+    		
+    		return tot + record.hits;
+	
+
+		},0);
+
+
+    numberHits.innerText = total;
+
+
  	}
 
 }

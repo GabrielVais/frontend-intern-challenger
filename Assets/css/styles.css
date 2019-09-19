@@ -222,7 +222,52 @@ main{
 
 section{
 
-	height:100px;
-	background-color:#777;
+	height:300px;
+	background-color:#9999;
 }
 
+
+section .content-final{
+
+	display:flex;
+	flex-direction:column;
+	padding-top:80px;
+	align-items:center;
+
+}
+
+section .content-final h1{
+
+	font-size:40px;
+	color:#AA1423;
+	font-weight:500;
+
+}
+
+section .content-final .card-number{
+	
+	margin-top:20px;
+	width:300px;
+	height:70px;
+	background:#EEE;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	align-self:center;
+}
+
+section .content-final .card-number #number-hit{
+
+	color:#AA1423;
+	font-size:40px;
+	font-weight:500;
+
+}
+
+section .content-final #result{
+
+	margin-top:10px;
+	color:#444;
+	font-size:20px;
+}

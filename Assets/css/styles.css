@@ -146,6 +146,7 @@ main{
 	font-weight:300;
 	color:#AA1423;
 	text-align:center;
+	font-family:'Roboto Slab', sans-serif;
 }
 
 .output-url{
@@ -176,6 +177,8 @@ main{
 	color:#AA1423;
 	font-weight:bold;
 	flex:1;
+	font-family:'Roboto Slab', sans-serif;
+
 
 }
 
@@ -241,6 +244,8 @@ section .content-final h1{
 	font-size:40px;
 	color:#AA1423;
 	font-weight:500;
+	font-family:'Roboto Slab', sans-serif;
+
 
 }
 
@@ -255,6 +260,7 @@ section .content-final .card-number{
 	align-items:center;
 	align-content:center;
 	align-self:center;
+
 }
 
 section .content-final .card-number #number-hit{
@@ -262,6 +268,8 @@ section .content-final .card-number #number-hit{
 	color:#AA1423;
 	font-size:40px;
 	font-weight:500;
+	font-family:'Roboto Slab', sans-serif;
+
 
 }
 
@@ -270,4 +278,46 @@ section .content-final #result{
 	margin-top:10px;
 	color:#444;
 	font-size:20px;
+}
+
+/*FOOTER ------------------- //*/
+
+footer{
+	
+	width:100%;
+
+
+}
+
+footer .items{
+	
+	height:100px;
+	display:flex;
+	align-content:center;
+	align-items:center;
+	flex-direction:row;
+	justify-content:space-around !important;
+}
+
+footer .items h2{
+
+	color:#AA1423;
+	font-family:'Roboto Slab', sans-serif;
+	font-size:30px;
+
+	
+}
+
+footer .items .social{
+
+	display:flex;
+	
+}
+
+
+footer .items .social li{
+
+	list-style:none;
+	padding-left:10px;
+	
 }

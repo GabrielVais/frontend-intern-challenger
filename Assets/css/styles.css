@@ -252,7 +252,7 @@ section .content-final h1{
 section .content-final .card-number{
 	
 	margin-top:20px;
-	width:300px;
+	width:30%;
 	height:70px;
 	background:#EEE;
 	display:flex;
@@ -266,7 +266,7 @@ section .content-final .card-number{
 section .content-final .card-number #number-hit{
 
 	color:#AA1423;
-	font-size:40px;
+	font-size:2rem;
 	font-weight:500;
 	font-family:'Roboto Slab', sans-serif;
 
@@ -295,6 +295,7 @@ footer .items{
 	align-items:center;
 	flex-direction:row;
 	justify-content:space-around !important;
+	flex-wrap:wrap;
 }
 
 footer .items h2{
@@ -318,4 +319,131 @@ footer .items .social li{
 	list-style:none;
 	padding-left:10px;
 	
+}
+
+/*responsividade ----------------- // */
+@media (max-width: 629px) {
+  
+ 	
+ 	header .background-home .text-header h1{
+	
+	
+		font-size:2rem;
+
+	}
+
+	header .background-home .text-header p{
+	
+	
+		font-size:1.2rem;
+	
+
+	}
+
+	header .background-home .form-url input[type="text"]{
+
+   
+   	 width: 50%;
+  
+
+	}
+
+	.list-urls li{
+		
+	
+		width:300px;
+	
+
+		}
+
+	section .content-final .card-number{
+	
+		width:50%;
+	
+
+	}
+ 
+}
+
+
+
+@media (max-width: 351px) {
+
+
+	header .background-home .text-header h1{
+	
+	
+		font-size:1.7rem;
+
+	}
+
+	header .background-home .text-header p{
+	
+	
+		font-size:0.7rem;
+	
+
+	}
+
+	header .background-home .form-url{
+	
+
+	flex-wrap:wrap;
+
+}
+
+	header .background-home .form-url input[type="text"]{
+
+   
+   	 width: 80%;
+  
+
+	}
+	
+	header .background-home .form-url  #btnEncurtar{
+	
+	width:90%;
+	height:50px;
+	margin-top:10px;
+
+	}
+
+
+
+	.list-urls li{
+		
+	
+		width:100%;
+
+	}
+
+	section .content-final .card-number{
+	
+		width:70%;
+	
+
+	}
+
+	.list-urls li .url {
+
+		font-size:1rem;
+
+
+	}
+
+
+	footer .items h2{
+
+	font-size:1rem;
+
+ 	
+	}	
+
+	section .content-final .card-number #number-hit {
+
+	font-size:1.4rem;
+
+	}
+
+
 }

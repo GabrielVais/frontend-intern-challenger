@@ -25,13 +25,13 @@ async function getJson(){
          
   }finally{
       
-     console.log(dados);
 
      const lista = document.querySelector(".list-urls");
 
      const numberHits = document.querySelector("#number-hit");
 
      //pegando 5 items com array slice (-5)
+     var dadoTotal = 0;
 
      dados.slice(-5).forEach(dado =>{
 
@@ -41,12 +41,14 @@ async function getJson(){
 					<span class="count-url">${dado.hits}</span>
 				</li>
 				<hr class="row-url"/>`;
-    
    		});
+
+
+
 
    	 
 
-   	  var total = dados.reduce( function(tot, record) {
+   	  var total = dados.slice(-5).reduce( function(tot, record) {
     	
     		
     		return tot + record.hits;
